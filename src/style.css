@@ -1,0 +1,80 @@
+body,
+.search-component .enter-city,
+.search-component .button:hover {
+  background-color: #e4f1fe;
+  font-family: "Lora", serif;
+}
+
+.container {
+  background-color: white;
+  display: block;
+  text-align: center;
+  margin: 80px auto 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 550px;
+  height: 350px;
+}
+
+.temp .degree {
+  font-size: 20px;
+  position: relative;
+  top: -26px;
+}
+
+.temp .emoji {
+  font-size: 30px;
+  position: relative;
+  top: -10px;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search-component .button {
+  padding: 10px 15px;
+  color: white;
+  background-color: #007cb9;
+  border: #007cb9;
+  border-radius: 3px;
+  transition: all 150ms ease-in-out;
+}
+
+.search-component .button:hover {
+  cursor: pointer;
+  color: #007cb9;
+}
+
+.search-component .enter-city {
+  width: 400px;
+  height: 26px;
+  border: #e4f1fe;
+  border-radius: 3px;
+  padding: 5px 5px 5px 10px;
+  margin: 3px;
+}
+
+.temp {
+  color: black;
+  font-size: 56px;
+}
+
+.update-temp {
+  color: blue;
+}
+
+.main-paragraph,
+footer {
+  color: #7f8389;
+}
+
+footer {
+  font-size: 14px;
+  position: relative;
+  bottom: -60px;
+  text-align: center;
+}
