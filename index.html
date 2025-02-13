@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="search-component">
+        <form action="" id="enter-a-city">
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            required
+            class="enter-city"
+            id="search-city"
+          />
+          <input type="submit" value="Search" class="button" />
+        </form>
+      </header>
+      <section class="current-weather">
+        <div>
+          <h1>Johannesburg</h1>
+          <div class="main-paragraph">
+            <span id="date">Saturday: 15:32</span>, moderate rain
+            <br />
+            <span class="second-paragraph">
+              Humidity: <strong class="update-temp">87%</strong>, Wind:
+              <strong class="update-temp">7.2km/h</strong>
+            </span>
+          </div>
+        </div>
+        <div>
+          <p class="temp">
+            <span class="emoji">☀️</span>
+            <span id="temp-degree">14</span><small class="degree">°C</small>
+          </p>
+        </div>
+      </section>
+      <footer>
+        <p>
+          <em
+            >This project was coded by <a href="">Nadia Tchuemo-Lappi</a> and is
+            open-sourced on <a href="" target="_blank">GitHub</a> and hosted on
+            <a href="" target="_blank">Netlify</a>.</em
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
