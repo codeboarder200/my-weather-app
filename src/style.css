@@ -5,10 +5,6 @@ body,
   font-family: "Lora", serif;
 }
 
-.search-component .button {
-  font-family: "Lora", serif;
-}
-
 .container {
   background-color: white;
   display: block;
@@ -44,6 +40,7 @@ body,
   padding: 10px 15px;
   color: white;
   background-color: #007cb9;
+  font-family: "Lora", serif;
   border: #007cb9;
   border-radius: 3px;
   transition: all 150ms ease-in-out;
