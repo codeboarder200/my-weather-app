@@ -5,6 +5,10 @@ body,
   font-family: "Lora", serif;
 }
 
+.search-component .button {
+  font-family: "Lora", serif;
+}
+
 .container {
   background-color: white;
   display: block;
