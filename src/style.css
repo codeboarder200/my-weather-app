@@ -5,6 +5,11 @@ body,
   font-family: "Lora", serif;
 }
 
+.search-component {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+
 .container {
   background-color: white;
   display: block;
@@ -34,8 +39,6 @@ body,
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border-top: 1px solid #f9f7fe;
-  padding: 0 0 30px 0;
 }
 
 .search-component .button {
@@ -82,5 +85,5 @@ footer {
   bottom: -60px;
   text-align: center;
   border-top: 1px solid #f9f7fe;
-  padding: 30px 0 0 0;
+  padding: 5px 0 0 0;
 }
