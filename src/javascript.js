@@ -3,7 +3,7 @@ function displayTemperature(response) {
   let tempDegree = document.querySelector("#temp-degree");
   tempDegree.innerHTML = `${currentTemp}`;
   let h1 = document.querySelector("h1");
-  h1.innerHTML = `${response.data.city}`;
+  h1.innerHTML = response.data.city;
   let weatherDescription = document.querySelector("#description");
   weatherDescription.innerHTML = response.data.condition.description;
   let humidity = document.querySelector("#humidity");
