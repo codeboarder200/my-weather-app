@@ -29,9 +29,16 @@ body,
 }
 
 .temp .emoji {
-  font-size: 30px;
+  width: 88px;
+  height: 88px;
   position: relative;
-  top: -10px;
+  top: 50px;
+  right: 80px;
+}
+
+.without-emoji {
+  position: relative;
+  top: -40px;
 }
 
 .current-weather {
