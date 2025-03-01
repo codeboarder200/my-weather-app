@@ -55,3 +55,15 @@ function search(event) {
 
 let form = document.querySelector("#enter-a-city");
 form.addEventListener("submit", search);
+
+let forecast = document.querySelector("#forecast");
+forecast.innerHTML = `<div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tues</div>
+            <div class="weather-forecast-icon">⛅</div>
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temp-high">
+                <strong>15°</strong>
+              </span>
+              <span class="weather-forecast-temp-low">9°</span>
+            </div>
+          </div>`;
