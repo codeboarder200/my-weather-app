@@ -15,6 +15,7 @@ function displayTemperature(response) {
                     src="${response.data.condition.icon_url}"
                     class="emoji"
                     />`;
+  getForecast(response.data.city);
 }
 
 function search(event) {
@@ -51,6 +52,12 @@ function search(event) {
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature);
   }
+}
+
+function getForecast(city) {
+  let apiKey = "fte5f4o35f8ba2b321d1c0ebb3adf4a1";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
 }
 
 function displayForecast() {
