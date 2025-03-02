@@ -48,10 +48,14 @@ function search(event) {
 
   let city = searchInput.value.trim();
   if (city) {
-    let apiKey = "fte5f4o35f8ba2b321d1c0ebb3adf4a1";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(displayTemperature);
+    searchCity(city);
   }
+}
+
+function searchCity(city) {
+  let apiKey = "fte5f4o35f8ba2b321d1c0ebb3adf4a1";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
 }
 
 function getForecast(city) {
@@ -82,4 +86,4 @@ function displayForecast() {
 let form = document.querySelector("#enter-a-city");
 form.addEventListener("submit", search);
 
-displayForecast();
+searchCity("Johannesburg");
