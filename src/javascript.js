@@ -76,23 +76,19 @@ function displayForecast(response) {
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
       forecastHTML += `<div class="weather-forecast-day">
-                      <div class="weather-forecast-date">${formatDay(
-                        day.time
-                      )}</div>
-                      <div class="weather-forecast-icon"><img src"${
-                        day.condition.icon_url
-                      }" /></div>
-                      <div class="weather-forecast-temperatures">
-                        <span class="weather-forecast-temp-high">
-                          <strong>${Math.round(
-                            day.temperature.maximum
-                          )}°</strong>
-                        </span>
-                        <span class="weather-forecast-temp-low">${Math.round(
-                          day.temperature.minimum
-                        )}°</span>
-                      </div>
-                    </div>`;
+                <div class="weather-forecast-date">${formatDay(day.time)}</div>
+                <div class="weather-forecast-icon"><img src="${
+                  day.condition.icon_url
+                }" /></div>
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temp-high">
+                    <strong>${Math.round(day.temperature.maximum)}°</strong>
+                  </span>
+                  <span class="weather-forecast-temp-low">${Math.round(
+                    day.temperature.minimum
+                  )}°</span>
+                </div>
+              </div>`;
     }
   });
   let forecastElement = document.querySelector("#forecast");
